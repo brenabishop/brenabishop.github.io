@@ -1,107 +1,187 @@
 body {
-    background-color: #077067;
-    text-align: center;
+  background-color: #077067;
+  text-align: center;
 }
 
 h1 {
-    color: white;
-    font-size: 350px;
-    border: none;
-    text-align: center;
+  color: white;
+  font-size: 350px;
+  border: none;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 0;
+}
 
-  }
+header hr {
+  width: 80%;
+}
+
+header h2 {
+  color: white;
+  font-size: 50px;
+}
+
+body h2 {
+  font-size: 80px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
 
 hr {
-    border: 1px solid white;
-    border-radius: 5px;
-    width: 20%;
-    /* border-bottom: 10px solid white;
-    border-radius: 5px;
-    border-width: 5px; */
+  border: 1px solid white;
+  border-radius: 5px;
+
+  margin-bottom: 50px;
+  /* border-bottom: 10px solid white;
+  border-radius: 5px;
+  border-width: 5px; */
 }
 
- header {
-    position: relative;
-    display: inline-block;
+header {
+
+  height: 100vw;
+  margin-bottom: 100px;
+} 
+
+footer {
+font-size: 40px;
 }
 
+/* nav {
+  display: none;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(253, 249, 249);
+  padding-top: 60px;
+} */
+
+/* @media only screen and (max-width: 600px)
 nav {
-    display: none;
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgb(253, 249, 249);
-    padding-top: 60px;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 40px;
+} */
+
+/* @media only screen and (max-width: 600px) {
+nav {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 40px;
 }
+} */
+
 
 nav a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+position: fixed;
+left: -200px; /* Position them outside of the screen */
+transition: 0.3s; /* Add transition on hover */
+padding: 15px; /* 15px padding */
+height: 50px;
+width: 210px; /* Set a specific width */
+text-decoration: none; /* Remove underline */
+font-size: 50px; /* Increase font size */
+color: white; /* White text color */
+border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+z-index: 999; 
+/* color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; */
+}
 
-header:hover nav {display: block;}
+nav a:hover {
+left: 0;
+}
+
+#about-nb {
+top: 20px;
+background-color: #44BDB3;
+}
+
+#skills-nb {
+top: 110px;
+background-color: #44BDB3;
+}
+
+#projects-nb {
+top: 200px;
+background-color: #44BDB3;
+}
+
+#resume-nb {
+top: 290px;
+background-color: #44BDB3;
+}
+
+#connect-nb {
+top: 380px;
+background-color: #44BDB3;
+}
 
 .aboutMe, .projects {
-    background-color: white;
+  background-color: white;
 }
 
+.about p {
+  font-size: 40px;
+}
 ul {
-    column-count: 2;
-    text-align: center;
-    list-style-type: none;
+  font-size: 40px;
+  list-style-type: none;
 }
 
-h2, h3, footer {
-    text-align: center;  
-}
+
 
 .self {
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 }
 
 .container {
-    position: relative;
-    width: 100%;
-  }
-  
-  .image {
-    display: block;
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-    width: 50%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #80b9b5;
-    border-radius: 10px;
-  }
-  
-  .container:hover .overlay {
-    opacity: .8;
-  }
-  
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  } 
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  height: auto;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #80b9b5;
+  border-radius: 10px;
+}
+
+.overview:hover .overlay {
+  opacity: .8;
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+} 
