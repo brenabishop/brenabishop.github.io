@@ -1,6 +1,8 @@
 body {
   background-color: #077067;
   text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 h1 {
@@ -185,3 +187,4 @@ ul {
   transform: translate(-50%, -50%);
   text-align: center;
 } 
+
