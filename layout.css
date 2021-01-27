@@ -12,7 +12,7 @@
        */
   }
   
-  .flex-item-about {
+  .pabout {
       display: flex;
       justify-content: center;
       flex-flow: row nowrap;
